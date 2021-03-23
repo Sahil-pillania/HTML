@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition,transform and animation </title>
+	<style type="text/css">
+		#p1 { text-decoration:none;   
+			  text-align: center; 
+			  padding: 1em 2em;
+              width: 10em;  
+              border-radius: 1.5em;  
+              color: #fff;   
+              background-color: mediumblue;
+			  border: 1px solid black;
+			  margin: 5px;}
+
+			#p1:hover { transition-property:background-color;        
+			   transition-duration: 0.3s;    
+			   transition-timing-function: ease-in-out;   
+			   transition-delay: 0.2s; 
+			  
+			  animation-name: colors;  
+			  animation-duration: 5s;  
+			  animation-timing-function: linear;  
+			  animation-iteration-count: infinite;  
+			  animation-direction: alternate;
+
+		}
+
+			@keyframes colors {  0% { background-color: red; }  20% { background-color: orange; }  40% { background-color: yellow; }  60% { background-color: green; }  80% { background-color: blue; }  100% { background-color: purple; } }
+
+		}
+	 
+		
+		span { font: bolder; }
+		#rotate {
+			 transform: rotate(-10deg); 
+			 transform-origin: 50%, 0%; 
+		}
+		#translate {transform: translateX(50px); }
+		#scale {transform: scaleX(1.5);}
+		#skew {transform: skewX(15deg);} 
+	</style>
+</head>
+<body>
+	<p><B><u>Transition, transformation and animation</u></B></p><br><br>
+        <h1><a href="" id="p1">Sahil-pillania</a></h1><br><br><br><br>
+        <span>Image after transforming rotate:</span><br><br>
+        <img src="https://wallpapercave.com/wp/wc1777067.jpg" id="rotate" alt="image" width="600" ><br><br><br><br>
+        <span>Image after transforming translate:</span><br>
+        <img src="https://webneel.com/wallpaper/sites/default/files/images/08-2018/2-nature-wallpaper-grass.preview.jpg" id="translate" alt="image" width="600"><br>
+        <span>Image after transforming scale:</span><br>
+        <img src="https://webneel.com/wallpaper/sites/default/files/images/04-2013/tropical-beach-wallpaper.preview.jpg" id="scale" alt="image" width="600"><br>
+        <span>Image after transforming skew:</span><br>
+        <img src="https://c4.wallpaperflare.com/wallpaper/389/375/578/lake-norway-ringerike-night-sky-wallpaper-preview.jpg" id="skew" alt="image" width="600"><br>
+
+</body>
+</html>
